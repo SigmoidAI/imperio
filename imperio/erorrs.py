@@ -1,0 +1,2 @@
+class NotAClusteringAlgorithm(Exception):
+    pass
