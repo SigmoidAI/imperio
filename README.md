@@ -35,7 +35,7 @@ NOTE: y argument is really used only by the Target-Imputation.
 
 `method.fit(X, y)`
 
-After you fit the model, you can use it for transforming new data, using the transform function. To transform function you should pass only the feature matrix (X).\
+After you fit the model, you can use it for transforming new data, using the transform function. To transform function you should pass only the feature matrix (X).
 
 `X_transformed = method.transform(X)`
 
