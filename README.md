@@ -15,22 +15,22 @@ This version of imperio has the next methods of feature selection:
 10. Yeo-Johnson Transformer (YeoJohnsonTransformer).
 11. ZCA (ZCATransformer).
 
-All these methods work like normal sklearn transformers. They have fit, transform and fit_transform functions implemented.\
+All these methods work like normal sklearn transformers. They have fit, transform and fit_transform functions implemented.
 
-Additionally every imperio transformer has an apply function which allows to apply an transformation on a pandas Data Frame.\
+Additionally every imperio transformer has an apply function which allows to apply an transformation on a pandas Data Frame.
 
 # How to use imperio
 
-To use a transformer from imperio you should just import the transformer from imperio in the following framework:\
+To use a transformer from imperio you should just import the transformer from imperio in the following framework:
 `from imperio import <class name>`
 
-class names are written above in parantheses.\
+class names are written above in parantheses.
 
 Next create a object of this algorithm (Box-Cox is used as an example).
 
 `method = BoxCoxTransformer()`
 
-Firstly you should fit the transformer, passing to it a feature matrix (X) and the target array (y).\
+Firstly you should fit the transformer, passing to it a feature matrix (X) and the target array (y).
 NOTE: y argument is really used only by the Target-Imputation.
 
 `method.fit(X, y)`
@@ -39,11 +39,11 @@ After you fit the model, you can use it for transforming new data, using the tra
 
 `X_transformed = method.transform(X)`
 
-Also you can fit and transform the data at the same time using the `fit_transform` function.\
+Also you can fit and transform the data at the same time using the `fit_transform` function.
 
 `X_transformed = method.fit_transform(X)`
 
-Also you can apply a transformation directly on a pandas DataFrame, choosing the columns that you want to change.\
+Also you can apply a transformation directly on a pandas DataFrame, choosing the columns that you want to change.
 
 `new_df = method.apply(df, 'target', ['col1', 'col2']`
 
