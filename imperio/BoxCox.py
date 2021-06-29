@@ -14,6 +14,8 @@ class BoxCoxTransformer(BaseEstimator, TransformerMixin):
             The constructor of the BoxCoxTransformer class.
         :param l: float, default = 0.5
             The lambda parameter used by Box-Cox Algorithm to choose the transformation applied on the data.
+        :param index: list, default = None
+            The list of indexes of the columns to apply the transformer on.
         '''
         self.l = l
         self.index = index
