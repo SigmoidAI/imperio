@@ -22,7 +22,9 @@ Additionally every imperio transformer has an apply function which allows to app
 # How to use imperio
 
 To use a transformer from imperio you should just import the transformer from imperio in the following framework:
-`from imperio import <class name>`
+```python
+from imperio import BoxCoxTransformer
+```
 
 class names are written above in parantheses.
 
