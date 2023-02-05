@@ -59,7 +59,7 @@ Also you can apply a transformation directly on a pandas DataFrame, choosing the
 new_df = method.apply(df, 'target', ['col1', 'col2']
 ```
 
-Some advices:\
+Some advice:
 1. Use `FrequencyImputationTransformer` or `TargetImputationTransformer` for categorical features.
 2. Use `BoxCoxTransformer` or `YeoJohnsonTransformer` for numerical features to normalize a feature distribution.
 3. Use `SpatialSignTransformer` on normalized data to bring outliers to normal samples.
