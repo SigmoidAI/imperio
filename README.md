@@ -30,24 +30,34 @@ class names are written above in parantheses.
 
 Next create a object of this algorithm (Box-Cox is used as an example).
 
-`method = BoxCoxTransformer()`
+```python
+method = BoxCoxTransformer()
+```
 
 Firstly you should fit the transformer, passing to it a feature matrix (X) and the target array (y).
 NOTE: y argument is really used only by the Target-Imputation.
 
-`method.fit(X, y)`
+```python
+method.fit(X, y)
+```
 
 After you fit the model, you can use it for transforming new data, using the transform function. To transform function you should pass only the feature matrix (X).
 
-`X_transformed = method.transform(X)`
+```python
+X_transformed = method.transform(X)
+```
 
 Also you can fit and transform the data at the same time using the `fit_transform` function.
 
-`X_transformed = method.fit_transform(X)`
+```python
+X_transformed = method.fit_transform(X)
+```
 
 Also you can apply a transformation directly on a pandas DataFrame, choosing the columns that you want to change.
 
-`new_df = method.apply(df, 'target', ['col1', 'col2']`
+```python
+new_df = method.apply(df, 'target', ['col1', 'col2']
+```
 
 Some advices:\
 1. Use `FrequencyImputationTransformer` or `TargetImputationTransformer` for categorical features.
@@ -57,4 +67,4 @@ Some advices:\
 
 With <3 from Sigmoid!
 
-We are open for feedback. Please send your impressions to papaluta.vasile@isa.utm.md
+We are open for feedback. Please send your impressions to vladimir.stojoc@gmail.com
